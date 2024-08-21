@@ -1,0 +1,246 @@
+.slider-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 1s ease-in-out;
+  animation: slide 15s infinite;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-200%);
+  }
+  75% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 10s;
+}
+
+/*coffee selection*/
+.product-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.coffee-selection {
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-selection p{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.coffee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coffee-item {
+  flex-basis: 30%;
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.coffee-item img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.coffee-item h2 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.coffee-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+.tasting-notes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tasting-notes li {
+  margin-bottom: 10px;
+}
+
+.tasting-notes li:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.brewing-methods {
+  font-size: 14px;
+  color: #999;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #444;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .coffee-item {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .coffee-item {
+    flex-basis: 100%;
+  }
+}
+
+
+
+/*brewing equipment*/
+.be {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  padding: 2em;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+h2 {
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+h3{
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.equipment-card {
+  color: #fff;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.equipment-card img {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.equipment-card h3 {
+  margin-top: 0;
+}
+
+.equipment-card p {
+  margin-bottom: 20px;
+}
+
+.equipment-card button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.equipment-card button:hover {
+  background-color: #444;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .equipment-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .equipment-card {
+      margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,156 @@
+/* Hero Section Styles */
+.hero {
+    padding: 100px 0;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.hero-image {
+    background-image: url('https://www.caffeluxxe.com/cdn/shop/articles/coffee-vs-espresso-hero-option-1_71a3a1b6-dd71-4535-b980-551ecd32debf_2000x.jpg?v=1581021467');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color: #000000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.discount-tag {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-weight: bold;
+  }
+  
+  .discount-percentage {
+    font-size: 24px;
+  }
+  
+  .discount-text {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 50px 0;
+    }
+    .hero-image {
+      height: 50vh;
+    }
+    .hero-title {
+      font-size: 36px;
+    }
+    .hero-subtitle {
+      font-size: 18px;
+    }
+    .discount-tag {
+      padding: 5px 10px;
+    }
+    .discount-percentage {
+      font-size: 24px;
+    }
+    .discount-text {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 20px 0;
+    }
+    .hero-image {
+      height: 30vh;
+    }
+    .hero-title {
+      font-size: 24px;
+    }
+    .hero-subtitle {
+      font-size: 14px;
+    }
+    .discount-tag {
+      padding: 2px 5px;
+    }
+    .discount-percentage {
+      font-size: 18px;
+    }
+    .discount-text {
+      font-size: 10px;
+    }
+  }
+
+
+  .delivery-process {
+    color: #f7f7f7;
+    padding: 40px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .step {
+    flex-basis: 25%;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .step img {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .step h3 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .step p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .step {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .step {
+      flex-basis: 100%;
+    }
+  }
+
+  .box img{
+    border-radius: 55%;
+  }
